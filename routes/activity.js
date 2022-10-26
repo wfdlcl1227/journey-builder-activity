@@ -86,8 +86,8 @@ exports.execute = function (req, res) {
             
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
-            console.log("inArguments0: " + decoded.inArguments[0]);
-            console.log("inArguments: " + decoded.inArguments);
+            console.log("inArguments0: " + JSON.stringify(decoded.inArguments[0]));
+            console.log("inArguments: " + JSON.stringify(decoded.inArguments));
             logData(req);
             res.send(200, 'Execute');
         } else {
