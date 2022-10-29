@@ -47,6 +47,7 @@ define([
     }
 
     function initialize(data) {
+        debugger;
         console.log(data);
         if (data) {
             payload = data;
@@ -65,7 +66,7 @@ define([
 
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
-                
+                $('#endpoint').val(inArgument[key]);
               
             });
         });
@@ -87,6 +88,7 @@ define([
     }
 
     function save() {
+        debugger;
         var postcardURLValue = $('#endpoint').val();
 
         payload['arguments'].execute.inArguments = [{
