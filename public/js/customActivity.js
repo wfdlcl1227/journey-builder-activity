@@ -66,7 +66,7 @@ define([
 
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
-                $('#endpoint').val(inArgument[key]);
+                $(inArgument[key]).val(inArgument[key]);
               
             });
         });
